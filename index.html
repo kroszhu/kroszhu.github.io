@@ -1,1 +1,154 @@
-hello
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kroszhu | Personal Website</title>
+    <meta
+      name="description"
+      content="Kroszhu 的个人主页，聚焦项目展示、创作记录与持续构建。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container site-header__inner">
+          <a class="brand" href="/" aria-label="Kroszhu homepage">
+            <span class="brand__mark">K</span>
+            <span class="brand__text">Kroszhu</span>
+          </a>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="#projects">Projects</a>
+            <a href="https://github.com/kroszhu" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero__grid">
+            <div class="hero__content">
+              <p class="eyebrow">Personal website</p>
+              <h1>Build useful things, then keep refining them.</h1>
+              <p class="hero__lead">
+                这里是 Kroszhu 的个人主页。首版以项目展示为中心，记录正在构建的
+                网站、实验和持续演进的想法。
+              </p>
+              <div class="hero__actions">
+                <a class="button button--primary" href="#projects">View projects</a>
+                <a
+                  class="button button--secondary"
+                  href="https://github.com/kroszhu"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub profile
+                </a>
+              </div>
+            </div>
+
+            <aside class="hero-card" aria-label="Website snapshot">
+              <p class="hero-card__label">Current focus</p>
+              <h2>Project-first homepage</h2>
+              <p>
+                A lightweight GitHub Pages site with clean structure, readable
+                code, and enough room to grow into a fuller personal brand.
+              </p>
+              <ul class="hero-card__meta">
+                <li>Static HTML</li>
+                <li>Reusable CSS system</li>
+                <li>Expandable sections</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section section--projects" id="projects">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Selected work</p>
+              <h2>Projects that represent current thinking</h2>
+              <p>
+                首版先展示最有代表性的项目类型，后续可以直接按同样结构继续扩展。
+              </p>
+            </div>
+
+            <div class="project-grid">
+              <article class="project-card">
+                <div class="project-card__header">
+                  <p class="project-card__tag">Featured</p>
+                  <h3>kroszhu.github.io</h3>
+                </div>
+                <p class="project-card__description">
+                  当前个人主页仓库。以轻量静态页面为基础，追求精简实现、清晰层次与可维护性。
+                </p>
+                <ul class="project-card__stack" aria-label="Tech stack">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>GitHub Pages</li>
+                </ul>
+                <a
+                  class="project-card__link"
+                  href="https://github.com/kroszhu/kroszhu.github.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View repository
+                </a>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card__header">
+                  <p class="project-card__tag">Open source</p>
+                  <h3>GitHub Profile</h3>
+                </div>
+                <p class="project-card__description">
+                  所有公开项目与持续迭代中的实验集合，适合放置更多仓库入口和长期维护作品。
+                </p>
+                <ul class="project-card__stack" aria-label="Project categories">
+                  <li>Repositories</li>
+                  <li>Experiments</li>
+                  <li>Notes</li>
+                </ul>
+                <a
+                  class="project-card__link"
+                  href="https://github.com/kroszhu?tab=repositories"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Browse projects
+                </a>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card__header">
+                  <p class="project-card__tag">Next</p>
+                  <h3>More work coming soon</h3>
+                </div>
+                <p class="project-card__description">
+                  这个位置预留给后续重点项目、技术专题或博客入口，保持当前结构即可无缝扩展。
+                </p>
+                <ul class="project-card__stack" aria-label="Planned extensions">
+                  <li>Case studies</li>
+                  <li>Writing</li>
+                  <li>Contact</li>
+                </ul>
+                <a class="project-card__link" href="#footer">Plan future sections</a>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="footer">
+        <div class="container site-footer__inner">
+          <p>Designed for clarity, built to grow.</p>
+          <p>© 2026 Kroszhu</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
